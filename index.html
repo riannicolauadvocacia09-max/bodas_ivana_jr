@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bodas de Esmeralda · Ivana &amp; Júnior</title>
-<meta name="description" content="40 anos de amor. Celebre conosco no dia 26 de dezembro de 2026, às 19h30, no Vó Lila – Icó/CE.">
+<meta name="description" content="40 anos de amor. Celebre conosco no dia 26 de dezembro de 2026, às 19 horas e 30 minutos, no Vó Lila Gastrobar – Icó/CE.">
 <meta name="theme-color" content="#0F3D2E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bodas de Esmeralda · Ivana & Júnior">
-<meta property="og:description" content="40 anos de amor. Sábado, 26/12/2026, às 19h30 – Vó Lila, Icó/CE.">
-<meta property="og:image" content="https://teofilonicolau.github.io/bodas-ivana-junior/assets/og.jpg">
-<meta property="og:url" content="https://teofilonicolau.github.io/bodas-ivana-junior/">
+<meta property="og:description" content="40 anos de amor. Sábado, 26/12/2026, às 19 horas e 30 minutos – Vó Lila Gastrobar, Icó/CE.">
+<meta property="og:image" content="https://bodasivanajr.vercel.app/assets/og.jpg">
+<meta property="og:url" content="https://bodasivanajr.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -68,6 +68,14 @@ img,video{display:block}
 .pontos{display:flex;gap:8px}
 .pontos i{width:8px;height:8px;border-radius:999px;background:rgba(15,61,46,.25);transition:width .4s ease}
 .pontos i.on{width:22px;background:var(--verde)}
+/* Badge de época */
+.era-badge{position:absolute;top:16px;right:16px;font-size:10px;letter-spacing:2px;text-transform:uppercase;background:var(--ouro);color:#fff;padding:3px 8px;border-radius:4px;z-index:1;font-family:'Jost',sans-serif}
+/* Carrossel família */
+.car-wrap{width:100%;overflow:hidden}
+.car-track{display:flex;gap:12px;padding:0 24px;transition:transform .5s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.car-slide{flex:0 0 auto;margin:0}
+.car-slide img{width:100%;height:260px;object-fit:cover;border-radius:16px;display:block}
+.car-slide figcaption{font-family:'Great Vibes',cursive;font-size:22px;color:var(--verde);text-align:center;margin:10px 0 0}
 
 /* texto se escrevendo */
 .escrever{position:relative}
@@ -75,6 +83,16 @@ img,video{display:block}
 .escrever .vivo{position:absolute;inset:0}
 .cursor{color:var(--ouro);font-weight:400;animation:piscar .8s step-end infinite}
 
+/* Hover elegante nos CTAs */
+.btn-cheio,.btn-borda{transition:transform .22s ease,box-shadow .22s ease,background .22s ease,color .22s ease}
+.btn-cheio:hover{background:#1A5C44;transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,61,46,.28)}
+.btn-borda:hover{background:var(--verde);color:#fff;transform:translateY(-2px)}
+#btnWhats{transition:filter .22s ease,transform .22s ease,box-shadow .22s ease}
+#btnWhats:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,164,92,.45)}
+.seta{transition:background .2s ease,transform .2s ease}
+.seta:hover{background:rgba(15,61,46,.09);transform:scale(1.08)}
+.btn-musica{transition:background .2s ease,border-color .2s ease}
+.btn-musica:hover{background:rgba(15,61,46,.75);border-color:rgba(255,255,255,.9)}
 /* animações */
 @keyframes subir{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 @keyframes flutuar{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-2deg) translateY(-8px)}}
@@ -150,17 +168,17 @@ img,video{display:block}
     <div class="sep"></div>
     <div class="item">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <div><small>Horário</small><strong>19h30</strong></div>
+      <div><small>Horário</small><strong>19 horas e 30 minutos</strong></div>
     </div>
     <div class="sep"></div>
     <div class="item">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-      <div><small>Local</small><strong>Vó Lila</strong><span style="font-size:14px;color:var(--texto)">Icó – CE</span></div>
+      <div><small>Local</small><strong>Vó Lila Gastrobar</strong><span style="font-size:14px;color:var(--texto)">Icó – CE</span></div>
     </div>
   </div>
   <div class="grade2">
-    <a class="btn btn-cheio" href="https://www.google.com/maps/search/?api=1&query=V%C3%B3%20Lila%20Ic%C3%B3%20CE" target="_blank" rel="noopener">Ver no mapa</a>
-    <a class="btn btn-borda" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bodas%20de%20Esmeralda%20-%20Ivana%20%26%20J%C3%BAnior&dates=20261226T223000Z/20261227T033000Z&location=V%C3%B3%20Lila%2C%20Ic%C3%B3%20-%20CE" target="_blank" rel="noopener">Salvar na agenda</a>
+    <a class="btn btn-cheio" href="https://www.google.com/maps/search/?api=1&query=V%C3%B3%20Lila%20Gastrobar%20Ic%C3%B3%20CE" target="_blank" rel="noopener">Ver no mapa</a>
+    <a class="btn btn-borda" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bodas%20de%20Esmeralda%20-%20Ivana%20%26%20J%C3%BAnior&dates=20261226T223000Z/20261227T033000Z&location=V%C3%B3%20Lila%20Gastrobar%2C%20Ic%C3%B3%20-%20CE" target="_blank" rel="noopener">Salvar na agenda</a>
   </div>
 </section>
 
@@ -175,28 +193,53 @@ img,video{display:block}
     <button type="button" class="carta polaroid" aria-label="Foto: Sorrisos que o tempo não apaga. Toque para ver a próxima."><img src="assets/lago.jpg" alt="Ivana e Júnior à beira do lago"><span class="leg">Sorrisos que o tempo não apaga</span></button>
     <button type="button" class="carta polaroid" aria-label="Foto: Sempre apaixonados. Toque para ver a próxima."><img src="assets/beijo.jpg" alt="Ivana e Júnior se beijando em um restaurante" style="object-position:center 35%"><span class="leg">Sempre apaixonados</span></button>
     <button type="button" class="carta polaroid" aria-label="Foto: Cada data, uma festa. Toque para ver a próxima."><img src="assets/presentes.jpg" alt="Ivana e Júnior em uma comemoração" style="object-position:center 30%"><span class="leg">Cada data, uma festa</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Entre rosas e beijos. Toque para ver a próxima."><img src="assets/casal80a.jpeg" alt="Ivana e Júnior entre rosas" style="object-position:center 30%"><span class="leg">Entre rosas e beijos</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Noites que nunca esqueço. Toque para ver a próxima."><img src="assets/casal80b.jpeg" alt="Ivana e Júnior à noite" style="object-position:center 40%"><span class="leg">Noites que nunca esqueço</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Cada viagem, mais amor. Toque para ver a próxima."><img src="assets/casal80c.jpeg" alt="Ivana e Júnior em Paraty" style="object-position:center 50%"><span class="leg">Cada viagem, mais amor</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Nos anos 80. Toque para ver a próxima."><div class="era-badge">Anos 80</div><img src="assets/casal80d.jpeg" alt="Ivana e Júnior nos anos 80" style="filter:sepia(.4) contrast(.95) brightness(.95)"><span class="leg">Nos anos 80</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Jovens e apaixonados. Toque para ver a próxima."><div class="era-badge">Anos 80</div><img src="assets/casal80e.jpeg" alt="Ivana e Júnior quando jovens" style="filter:sepia(.4) contrast(.95) brightness(.95)"><span class="leg">Jovens e apaixonados</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Lado a lado. Toque para ver a próxima."><img src="assets/casal80f.jpeg" alt="Ivana e Júnior lado a lado"><span class="leg">Lado a lado</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Sempre juntos. Toque para ver a próxima."><img src="assets/casal80g.jpeg" alt="Ivana e Júnior sempre juntos"><span class="leg">Sempre juntos</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: 40 anos de história. Toque para ver a próxima."><img src="assets/casal80h.jpeg" alt="Ivana e Júnior — 40 anos de história"><span class="leg">40 anos de história</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Um amor eterno. Toque para ver a próxima."><img src="assets/casal80i.jpeg" alt="Ivana e Júnior — um amor eterno"><span class="leg">Um amor eterno</span></button>
   </div>
   <div class="setas">
     <button type="button" class="seta" id="ant" aria-label="Foto anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F3D2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <div class="pontos" id="pontos"><i></i><i></i><i></i></div>
+    <div class="pontos" id="pontos"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <button type="button" class="seta" id="prox" aria-label="Próxima foto"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F3D2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
 </section>
 
 <!-- FAMÍLIA -->
-<section class="sec" style="gap:24px">
-  <h2 class="escrever script titulo" style="font-size:44px">Nossa maior obra</h2>
-  <p style="margin:0;font-size:15px;line-height:1.7;color:var(--texto)">Filhos, neto e uma família construída com amor, fé e parceria.</p>
-  <div class="grade2">
-    <img src="assets/familia.jpg" alt="Ivana e Júnior com os filhos" style="width:100%;height:230px;object-fit:cover;border-radius:14px">
-    <img src="assets/neto.jpg" alt="Ivana e Júnior com o neto" style="width:100%;height:230px;object-fit:cover;object-position:center 25%;border-radius:14px">
+<section class="sec" style="gap:24px;padding:60px 24px">
+  <div style="width:100%;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+    <h2 class="escrever script titulo" style="font-size:44px">Nossa maior obra</h2>
+    <p style="margin:0;font-size:15px;line-height:1.7;color:var(--texto)">Filhos, netos e uma família construída com amor, fé e parceria.</p>
+    <div style="font-size:14px;color:var(--texto)">Toque na foto para ver a próxima</div>
+  </div>
+  <div class="baralho" id="baralho2">
+    <button type="button" class="carta polaroid" aria-label="Foto: Nossa turma toda. Toque para ver a próxima."><img src="assets/familia.jpg" alt="Família reunida" style="object-position:center 20%"><span class="leg">Nossa turma toda</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: A vovó e seu tesouro. Toque para ver a próxima."><img src="assets/neto.jpg" alt="A vovó e o neto"><span class="leg">A vovó e seu tesouro</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Aventuras em família. Toque para ver a próxima."><img src="assets/familia2.jpeg" alt="Aventuras em família" style="object-position:center 30%"><span class="leg">Aventuras em família</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Os meninos. Toque para ver a próxima."><img src="assets/familia3.jpeg" alt="Os filhos"><span class="leg">Os meninos</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: A família cresceu. Toque para ver a próxima."><img src="assets/familia4.jpeg" alt="Família reunida"><span class="leg">A família cresceu</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Memórias juntos. Toque para ver a próxima."><img src="assets/familia5.jpeg" alt="Família em momento especial"><span class="leg">Memórias juntos</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Felicidade em família. Toque para ver a próxima."><img src="assets/familia6.jpeg" alt="Família feliz"><span class="leg">Felicidade em família</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Amor que transborda. Toque para ver a próxima."><img src="assets/familia7.jpeg" alt="Família com amor"><span class="leg">Amor que transborda</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Sempre unidos. Toque para ver a próxima."><img src="assets/familia8.jpeg" alt="Família sempre unida"><span class="leg">Sempre unidos</span></button>
+    <button type="button" class="carta polaroid" aria-label="Foto: Nossa maior riqueza. Toque para ver a próxima."><img src="assets/familia9.jpeg" alt="Nossa maior riqueza"><span class="leg">Nossa maior riqueza</span></button>
+  </div>
+  <div class="setas">
+    <button type="button" class="seta" id="ant2" aria-label="Foto anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F3D2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="pontos" id="pontos2"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <button type="button" class="seta" id="prox2" aria-label="Próxima foto"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F3D2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
 </section>
 
 <!-- CONFIRMAÇÃO -->
 <section class="sec" style="gap:18px;padding:60px 28px;background:var(--verde)">
   <h2 class="escrever script titulo" style="font-size:44px;color:#fff">Confirme sua presença</h2>
-  <p style="margin:0;font-size:15px;line-height:1.7;color:var(--claro)">Sua presença vai tornar essa noite ainda mais especial. Por favor, confirme até [DATA LIMITE].</p>
+  <p style="margin:0;font-size:15px;line-height:1.7;color:var(--claro)">Sua presença vai tornar essa noite ainda mais especial. Por favor, confirme até <strong style="color:var(--ouro)">10 de dezembro de 2026</strong>.</p>
   <a class="btn" id="btnWhats" href="#" target="_blank" rel="noopener" style="width:100%;min-height:56px;background:var(--ouro);color:var(--verde);font-size:16px">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F3D2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c.5 2 2.5 4 4.5 4.5l1.2-1.2 2 1-.5 1.7c-3.5.3-7.7-3.9-7.4-7.4l1.7-.5 1 2z"/></svg>
     Confirmar pelo WhatsApp
@@ -216,7 +259,7 @@ img,video{display:block}
 (function () {
   // ===== Configurações =====
   var WHATSAPP = '5585996156766';
-  var MENSAGEM = 'Olá! Confirmo minha presença nas Bodas de Esmeralda de Ivana e Júnior, dia 26/12 às 19h30. Nome(s): ';
+  var MENSAGEM = 'Olá! Confirmo minha presença nas Bodas de Esmeralda de Ivana e Júnior, dia 26/12 às 19 horas e 30 minutos. Nome(s): ';
   var DATA_FESTA = Date.UTC(2026, 11, 26, 22, 30, 0); // 26/12/2026 19h30 (Brasília)
 
   // ===== WhatsApp =====
@@ -285,6 +328,29 @@ img,video{display:block}
   document.getElementById('prox').addEventListener('click', function () { passo(1); });
   document.getElementById('ant').addEventListener('click', function () { passo(-1); });
   desenhar(); reiniciar();
+
+  // ===== Baralho família =====
+  var cartas2 = Array.prototype.slice.call(document.querySelectorAll('#baralho2 .carta'));
+  var pontos2 = Array.prototype.slice.call(document.querySelectorAll('#pontos2 i'));
+  var atual2 = 0, n2 = cartas2.length, timer2;
+  function desenhar2() {
+    cartas2.forEach(function (c, i) {
+      var pos = (i - atual2 + n2) % n2, t, o = 1;
+      if (pos === 0) t = 'translate(0,0) rotate(0deg) scale(1)';
+      else if (pos === n2 - 1 && n2 > 2) { t = 'translate(-140%,-20px) rotate(-18deg) scale(.95)'; o = 0; }
+      else if (pos === 1) t = 'translate(10px,10px) rotate(4deg) scale(.96)';
+      else t = 'translate(0,24px) scale(.88)', o = 0;
+      c.style.transform = t; c.style.opacity = o; c.style.zIndex = n2 - pos;
+      c.tabIndex = pos === 0 ? 0 : -1;
+    });
+    pontos2.forEach(function (p, i) { p.classList.toggle('on', i === atual2); });
+  }
+  function passo2(dir) { atual2 = (atual2 + dir + n2) % n2; desenhar2(); reiniciar2(); }
+  function reiniciar2() { clearInterval(timer2); timer2 = setInterval(function () { atual2 = (atual2 + 1) % n2; desenhar2(); }, 5000); }
+  cartas2.forEach(function (c) { c.addEventListener('click', function () { passo2(1); }); });
+  document.getElementById('prox2').addEventListener('click', function () { passo2(1); });
+  document.getElementById('ant2').addEventListener('click', function () { passo2(-1); });
+  desenhar2(); reiniciar2();
 
   // ===== Texto se escrevendo =====
   var reduzido = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
