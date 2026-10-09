@@ -4,8 +4,8 @@ Convite digital interativo para os 40 anos de casamento de Ivana e Júnior.
 
 📅 Sábado, 26 de dezembro de 2026 · 19h30 · Vó Lila – Icó/CE
 
-**Acesse:** https://teofilonicolau.github.io/bodas-ivana-junior/
-
+**Acesse:** [https://teofilonicolau.github.io/bodas-ivana-junior/
+](https://bodasivanajr.vercel.app/)
 ## Como editar
 - Textos, data e local: `index.html`
 - Número do WhatsApp, mensagem e data da contagem: bloco "Configurações" no fim do `index.html`
