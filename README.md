@@ -13,3 +13,6 @@ Convite digital interativo para os 40 anos de casamento de Ivana e Júnior.
 
 ---
 Convite digital por [TamarAI](https://share.google/TzYXB2WJpn9usNjYR)
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f8cb4957-c732-4a37-82af-27d60ced8d32" />
+
